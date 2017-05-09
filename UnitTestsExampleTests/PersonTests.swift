@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import UnitTestsExample
 
 class PersonTests: XCTestCase {
     
@@ -20,16 +21,17 @@ class PersonTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInit_ShouldTakeName() {
+        let name = "Albert Test"
+        let person = Person(name: name)
+        XCTAssertEqual(person.name, name)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testInit_ShouldTakeAddress() {
+        let name = "Albert Test"
+        let address = "Test street 1"
+        let person = Person(name: name, address: address)
+        XCTAssertEqual(person.address, address)
     }
     
 }

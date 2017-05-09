@@ -12,7 +12,9 @@
 		DEF47F051EC1CE3C006084F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF47F031EC1CE3C006084F3 /* Main.storyboard */; };
 		DEF47F071EC1CE3C006084F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF47F061EC1CE3C006084F3 /* Assets.xcassets */; };
 		DEF47F0A1EC1CE3C006084F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF47F081EC1CE3C006084F3 /* LaunchScreen.storyboard */; };
-		DEF47F151EC1CE3C006084F3 /* UnitTestsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF47F141EC1CE3C006084F3 /* UnitTestsExampleTests.swift */; };
+		DEF47F201EC1CF8B006084F3 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF47F1F1EC1CF8B006084F3 /* ViewControllerTests.swift */; };
+		DEF47F221EC1EAB3006084F3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF47F211EC1EAB3006084F3 /* Person.swift */; };
+		DEF47F261EC1ED15006084F3 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF47F251EC1ED15006084F3 /* PersonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		DEF47F091EC1CE3C006084F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF47F0B1EC1CE3C006084F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF47F101EC1CE3C006084F3 /* UnitTestsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEF47F141EC1CE3C006084F3 /* UnitTestsExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestsExampleTests.swift; sourceTree = "<group>"; };
 		DEF47F161EC1CE3C006084F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF47F1F1EC1CF8B006084F3 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		DEF47F211EC1EAB3006084F3 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DEF47F251EC1ED15006084F3 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				DEF47F061EC1CE3C006084F3 /* Assets.xcassets */,
 				DEF47F081EC1CE3C006084F3 /* LaunchScreen.storyboard */,
 				DEF47F0B1EC1CE3C006084F3 /* Info.plist */,
+				DEF47F211EC1EAB3006084F3 /* Person.swift */,
 			);
 			path = UnitTestsExample;
 			sourceTree = "<group>";
@@ -90,8 +95,9 @@
 		DEF47F131EC1CE3C006084F3 /* UnitTestsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEF47F141EC1CE3C006084F3 /* UnitTestsExampleTests.swift */,
 				DEF47F161EC1CE3C006084F3 /* Info.plist */,
+				DEF47F1F1EC1CF8B006084F3 /* ViewControllerTests.swift */,
+				DEF47F251EC1ED15006084F3 /* PersonTests.swift */,
 			);
 			path = UnitTestsExampleTests;
 			sourceTree = "<group>";
@@ -146,10 +152,12 @@
 				TargetAttributes = {
 					DEF47EFB1EC1CE3C006084F3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2RLYKMD3U8;
 						ProvisioningStyle = Automatic;
 					};
 					DEF47F0F1EC1CE3C006084F3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DEF47EFB1EC1CE3C006084F3;
 					};
@@ -199,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF47F221EC1EAB3006084F3 /* Person.swift in Sources */,
 				DEF47F021EC1CE3C006084F3 /* ViewController.swift in Sources */,
 				DEF47F001EC1CE3C006084F3 /* AppDelegate.swift in Sources */,
 			);
@@ -208,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF47F151EC1CE3C006084F3 /* UnitTestsExampleTests.swift in Sources */,
+				DEF47F261EC1ED15006084F3 /* PersonTests.swift in Sources */,
+				DEF47F201EC1CF8B006084F3 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = UnitTestsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bj.frohling.UnitTestsExample;
@@ -353,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = UnitTestsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bj.frohling.UnitTestsExample;
@@ -366,10 +378,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bj.frohling.UnitTestsExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestsExample.app/UnitTestsExample";
 			};
@@ -380,6 +394,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bj.frohling.UnitTestsExampleTests;

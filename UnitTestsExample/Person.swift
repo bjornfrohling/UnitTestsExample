@@ -8,6 +8,12 @@
 
 import UIKit
 
-class Person: NSObject {
-
+struct Person {
+    let name: String
+    let address: String?
+    
+    init(name: String, address: String? = nil) {
+        self.name = name
+        self.address = address
+    }
 }
